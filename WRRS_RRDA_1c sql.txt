@@ -1,0 +1,35 @@
+--run each section separately
+
+--drop table SAILW0911V.WRRS_REF_FBC_RESULTS	--substitiute 'FBC' accordingly 
+create table SAILW0911V.WRRS_REF_FBC_RESULTS	--substitiute 'FBC' accordingly 
+(
+ALF_E				bigint
+,GOOD_1439_ALF			bigint
+,REPORTID_E			bigint
+,AREA_OF_INTEREST		char(10)	-- adjust char length accordingly
+,USER_FRIENDLY_NAME		char(16)	-- adjust char length accordingly
+,SUBCATEGORY			char(22)	-- adjust char length accordingly
+,VAL				char(85)			
+,VAL_NUMERIC			double
+,VAL_TEXT			char(85)	-- adjust char length accordingly
+,VALTYPE			char(21)
+,AUTHORISED_DT			date
+,AUTHORISED_TM			time
+,SPCM_COLLECTED_DT		date
+,SPCM_COLLECTED_TM		time
+,SPCM_RECEIVED_DT		date
+,SPCM_RECEIVED_TM		time
+,RESULTS_SOURCE			char(33)	-- adjust char length accordingly
+,CLEANING_PROTOCOL_SOURCE	char(30)	-- adjust char length accordingly
+)
+;
+commit;
+
+insert into SAILW0911V.WRRS_REF_FBC_RESULTS	--substitiute 'FBC' accordingly 
+
+(--d
+--insert SQL from WRRS_RRDA_1a.sql here		--substitiute definition in WRRS_RRDA_1a.sql accordingly 
+)--d
+
+--where year(*chosen date field*) = *chosen years*  --use this if insert is too large to run (see WRRS_RRDA_smaller_partitioning.sql)
+;
