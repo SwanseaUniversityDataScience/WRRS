@@ -45,3 +45,4 @@ The areas of the WRRS that have been worked on can be found in the "dictionary" 
 ### Further information:
 WRRS currently contains pathology results from WLIMS, but has the potential to expand to other areas of WLIMS. 
 For further information on working with the WRRS data, please see Data Explained - The Welsh Results Reports Service (WRRS) Data.pdf located in the main folder of the repository.
+Contact details can be found in teh ADR Data Explained pdf
